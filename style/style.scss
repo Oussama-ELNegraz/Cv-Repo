@@ -1,0 +1,544 @@
+@import "_Variables.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 2500px;
+   // direction: rtl;
+   // text-align: right;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.display{
+     display: none !important;
+}
+.display1{
+    display: block !important;
+}
+#bars {
+    top: 0px;
+    position: fixed;
+    background-color: $color4;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    display: none;
+    z-index: 2;
+    div{
+        background-color: red;
+        padding:16.25px;
+        img {
+            height: 27.5px;
+        }
+    }
+    a img{
+        height: 60px;
+        float: right;
+    }
+    h3{
+        margin: 0 10px;
+        line-height: 60px;
+    }
+    h1{
+        width: 90%;
+        margin-right: 40px;
+        text-align: center;
+        line-height: 60px;
+        color: $color1;
+    }
+}
+
+#menu{
+    overflow: hidden;
+    top: 60px;
+    position: fixed;
+    height: 95%;
+    width: 70%;
+    background-color: $color3;
+    z-index: 3;
+    display: none;
+    #s1,.option1 , .option2{
+        margin: 1% 2%;
+        padding: 8% ;
+        text-align: center;
+    }
+    #s1:hover,.option1:hover, .option2:hover{
+        background-color: $color5;
+        color: white;
+    }
+    i{
+            font-size: 45px;
+            position: fixed;
+            color: $color1;
+        }
+    select{
+        margin: 0px 27.5% !important;
+        padding: 10px 50px !important ;
+        font-weight: bold;
+        border-radius: 20px;
+        background-color: $color6;
+        color: $color1;
+        width: 70%;
+    }
+}
+header{
+    background-image: url($pathImg + $backImg );
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color : $colorHeader;
+    overflow: hidden;
+    .bar{
+        position: absolute;
+        i{
+            font-size: 50px;
+            margin-top: 11px;
+            margin: 11px 20px 0px;
+        }
+        i:hover{
+            color: $color4;
+            cursor: pointer;
+        }
+        form select{
+            margin:25px 10px;
+            line-height: 65px;
+            float: $float-left;
+            background-color: $color2;
+            color: $color6;
+            font-size: 15px;
+            padding: 5px  8px;
+            border-radius: 15px;
+        }
+    }
+    #nav{
+        position: fixed;
+        width: 85%;
+        overflow: hidden;
+        height: 65px;
+        border-radius: 25px;
+        z-index: 2;
+        background-color: $color1;
+        cursor: pointer;
+    }
+    #opt{
+        width: $width-G + 10%;
+        float: $float-left;
+        .option{
+            font-size: 20px;
+            margin:0 2%;
+            line-height: 65px;
+            float: $float-left;
+        }
+        .option:hover{
+            color: $color3;
+        }
+    }
+    #logo{
+        width: $width-P;
+        float: $float-right;
+        text-align: $float-right;
+        overflow: hidden;
+        img{
+            position: fixed;
+            width: 120px;
+         //   right: 80px;
+            top: -6px;
+            margin:0 -125px;
+        }
+    }
+}
+
+.profil{
+    overflow: hidden;
+    font-size: $para-size;
+    padding: $margin 0;
+    background-color: $color3;
+    div{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            ;
+            color: $color1;
+        }
+        div{
+            overflow: hidden;
+            float: $float-right;
+            width: $width-G;
+            color: $color2;
+            ul{
+                li{
+                    margin:  0 7.5%;
+                    
+                }
+            }
+            h3{
+                color: $color1;
+                margin: 10px 2%;
+            }
+        }
+        img{
+            float: $float-left;
+            margin-top: 20px;
+            width: 14%;
+            margin-left: $marginleftHe;
+        }
+    }
+    clear: both;
+}
+
+.skills{
+    padding:  $margin 0;
+    overflow: hidden;
+    font-size: $para-size;
+    background-color: $color2 ;
+    div{
+        h1{
+            width: 100%;
+            margin-bottom: $marginleftHe ;
+            text-align: center;
+            color: $color5;
+        }
+        .prog{
+            overflow: hidden;
+            color: $color3;
+            margin-left: 2%;
+            text-align: left !important;
+            direction: ltr !important;
+            h3{
+                float: left;
+                width: 15%;
+            }
+            div{ 
+                position: relative;
+                background-color: $colorspan;
+                width: 60%;
+                height: 12px;
+                border-radius: 5px;
+                float: left;
+                margin-top: 18px;
+                z-index: 1;
+                margin-left: 8%;
+                span{
+                    border-radius: 5px;
+                    background-color: $color4;
+                    position: absolute;
+                    height: 100%;
+                }
+            }
+            ul{
+                li{
+                    margin:  0 7.5%;
+                }
+            }
+            h3{
+                color: $color3;
+                margin: 10px 2%;
+                display: inline;
+            }
+        }
+    }
+}
+
+
+
+.gallery{
+    padding:  $margin 0;
+    overflow: hidden;
+    font-size: $para-size;
+    background-color: $color3 ;
+    div{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            color: $color1;
+        }
+        div{
+            width: 50%;
+            margin: auto;
+            img{
+            width: 90%;
+            }
+        }
+    }
+}
+
+.features{
+    overflow: hidden;
+    font-size: $para-size;
+    padding: $margin 0;
+    background-color: $color5;
+    div{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            color: $color6;
+        }
+        div{
+            width: 27%;
+            margin: 50px 2.51% 0px;
+            display: inline-block;
+            img{
+                width: 40%;
+                margin: 0 30%;
+            }
+            h3,p {
+                text-align: center;
+            }
+        }
+    }
+
+}
+footer{
+    overflow: hidden;
+    font-size: $para-size;
+    padding-top: $margin;
+    background-color: $color3;
+    .container{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            color: $color1;
+        }
+        .div1{
+            width: 50%;
+            float: $float-left;
+            input{
+                width: 80%;
+                height: 40px;
+                margin: 8px auto;
+                background-color: $color2;
+                color: $color4;
+                padding: 0 15px;
+                border-radius: 20px;
+                outline: none;
+            }
+            input:focus , input:hover{
+                border: $color5 2px double;
+                background-color: $color7;
+            }
+            ::placeholder{
+                color: $color4;
+                text-align: right;
+            }
+        }
+        .div2{
+            width: 50%;
+            float: $float-right;
+            ::placeholder{
+                color: $color4;
+                text-align: right;
+            }
+            #text{
+                margin: 8px auto;
+                max-width: 84%;
+                width: 100%;
+                height: 130px;
+                background-color: $color2;
+                color: $color4;
+                padding: 15px;
+                border-radius: 20px;
+                outline: none;
+                
+            }
+            #text:hover , #text:focus{
+                border: $color5 2px double;
+                background-color: $color7;        
+                margin: 7px auto;
+            }
+            input{
+                width: 84%;
+                height: 40px;
+                margin: 8px auto;
+                background-color: $color2;
+                color: $color4;
+                padding: 5px;
+                border-radius: 20px;
+                outline: none;
+            }
+            input:hover{
+                border: $color5 2px double;
+                background-color: $color7;
+            }
+        }
+    }
+    .div3{
+        background-color: $color2;
+        color: $color3;
+        text-align: center;
+        margin-top: $margin;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+
+@media  screen and (max-width : 655px){
+    #bars {
+        display: flex;
+    }
+    
+    header{
+    margin-top: 60px;
+    }
+    header .bar i {
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    .container {
+        animation: wid 3s;
+    }
+    @keyframes wid {
+        from{
+            width: 80%;
+        }to{
+            width: 90%;
+        }
+    }
+    .container {
+        width: 90%;
+    }
+    .skills div .prog div {
+        animation: marge 3s;
+    }
+    @keyframes marge {
+        from{
+            margin-left: 8%;
+        }to{
+            margin-left: 15%;
+        }
+    }
+    .skills div .prog div {
+        margin-left: 15%;
+    }
+    .gallery div div{
+        width: 100%;
+        margin: 10px 5%;
+    }
+}
+
+@media  screen and (max-width : 465px){
+    .container {
+        animation: wid 1s;
+    }
+    @keyframes wid {
+        from{
+            width: 90%;
+        }to{
+            width: 95%;
+        }
+    }
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+    .skills div .prog div {
+        animation: marge 1s;
+    }
+    @keyframes marge {
+        from{
+            margin-left: 15%;
+        }to{
+            margin-left: 17.5%;
+        }
+    }
+    .skills div .prog div {
+        margin-left: 20%;
+    }
+    #bars h1 {
+        display: none;
+    }
+    #bars  h3{
+        width: 80%;
+    }
+    .profil div img, .profil div div{
+        float: none;
+    }
+    .profil div img{
+        width: 40%;
+        margin: 20px 30%;
+    }
+    .profil div div{
+        width: 90%;
+        margin: auto;
+    }
+    .features div div {
+        width: 44%;
+    }
+    .gallery div div{
+        width: 100%;
+        overflow: hidden;
+        margin: 10px 5%;
+    }
+    footer .container .div1 , footer .container .div2{
+        float: none;
+        width: 100%;
+        overflow: hidden;
+    }
+    footer .container .div1 input{
+        width: 100%;
+        margin: 10px 0; 
+    }
+    footer .container .div2 #text{
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+    }
+    footer .container .div2 input{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 330px){
+    .skills div .prog div  {
+        width: 50%;
+        margin-left: 30%;
+    }
+    footer .container h1 , .features div h1{
+        margin: auto ;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width : 264px){
+    .skills div .prog h3,.skills div .prog div{
+        float: none;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .skills div .prog h3{
+        text-align: center;
+        display: block;
+    }
+    .features div h1 {
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    .features div div{
+        width: 80%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .features{
+        text-align: center;
+    }
+    .profil div h1{
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width:350px){
+    #menu i{
+        display: none;
+    }
+    #menu select{
+        margin: 0px 14.5% !important;
+    }
+}
+

@@ -1,0 +1,116 @@
+footer{
+    overflow: hidden;
+    font-size: $para-size;
+    padding-top: $margin;
+    background-color: $color3;
+    .container{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            color: $color1;
+        }
+        .div1{
+            width: 50%;
+            float: $float-left;
+            input{
+                width: 80%;
+                height: 40px;
+                margin: 8px auto;
+                background-color: $color2;
+                color: $color4;
+                padding: 0 15px;
+                border-radius: 20px;
+                outline: none;
+            }
+            input:focus , input:hover{
+                border: $color5 2px double;
+                background-color: $color7;
+            }
+            ::placeholder{
+                color: $color4;
+              //  text-align: right;
+            }
+        }
+        .div2{
+            width: 50%;
+            float: $float-right;
+            ::placeholder{
+                color: $color4;
+             //   text-align: right;
+            }
+            #text{
+                margin: 8px auto;
+                max-width: 84%;
+                width: 100%;
+                height: 130px;
+                background-color: $color2;
+                color: $color4;
+                padding: 15px;
+                border-radius: 20px;
+                outline: none;
+                
+            }
+            #text:hover , #text:focus{
+                border: $color5 2px double;
+                background-color: $color7;        
+                margin: 7px auto;
+            }
+            input{
+                width: 84%;
+                height: 40px;
+                margin: 8px auto;
+                background-color: $color2;
+                color: $color4;
+                padding: 5px;
+                border-radius: 20px;
+                outline: none;
+            }
+            input:hover{
+                border: $color5 2px double;
+                background-color: $color7;
+            }
+        }
+    }
+    .div3{
+        background-color: $color2;
+        color: $color3;
+        text-align: center;
+        margin-top: $margin;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+
+@media screen and (max-width : 465px){
+    footer .container .div1, footer .container .div2 {
+        float: none;
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    footer .container .div1 input{
+        width: 100%;
+        margin: 8px 0;
+        height: 35px;
+        font-size: $input-size1 ;
+    }
+    footer .container .div2 #text{
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+        font-size: $input-size1 ;
+    }
+    footer .container .div2 input{
+        width: 100%;
+        height: 35px;
+        font-size: $input-size1 ;
+    }
+}
+
+@media screen and (max-width : 330px){ 
+    footer .container h1 , .features div h1{
+        margin: auto ;
+        text-align: center;
+        font-size: 35px;
+    }
+}

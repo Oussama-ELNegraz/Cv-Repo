@@ -1,0 +1,455 @@
+body {
+  direction: rtl;
+  text-align: right; }
+
+footer .container .div1 ::placeholder,
+footer .container .div2 ::placeholder {
+  text-align: right; }
+
+#bars {
+  top: 0px;
+  position: fixed;
+  background-color: #66FCF1;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  display: none;
+  z-index: 2; }
+  #bars div {
+    background-color: red;
+    padding: 16.25px; }
+    #bars div img {
+      height: 27.5px; }
+  #bars a img {
+    height: 60px;
+    float: right; }
+  #bars h3 {
+    margin: 0 10px;
+    line-height: 60px; }
+  #bars h1 {
+    width: 90%;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: #0b0c10; }
+
+#menu {
+  overflow: hidden;
+  top: 60px;
+  position: fixed;
+  height: 95%;
+  width: 70%;
+  background-color: #c5c6c7af;
+  z-index: 3;
+  display: none; }
+  #menu #s1, #menu .option1, #menu .option2 {
+    margin: 1% 2%;
+    padding: 8%;
+    text-align: center; }
+  #menu #s1:hover, #menu .option1:hover, #menu .option2:hover {
+    background-color: #45A29E;
+    color: white; }
+  #menu i {
+    font-size: 45px;
+    position: fixed;
+    color: #0b0c10; }
+  #menu select {
+    margin: 0px 27.5% !important;
+    padding: 10px 50px !important;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #c5c6c7;
+    color: #0b0c10;
+    width: 70%; }
+
+header {
+  background-image: url("../../img/pro.jpg");
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  overflow: hidden; }
+  header .bar {
+    position: absolute; }
+    header .bar i {
+      font-size: 50px;
+      margin-top: 11px;
+      margin: 11px 20px 0px; }
+    header .bar i:hover {
+      color: #66FCF1;
+      cursor: pointer; }
+    header .bar form select {
+      margin: 25px 10px;
+      line-height: 65px;
+      float: right;
+      background-color: #1F2833;
+      color: #c5c6c7;
+      font-size: 15px;
+      padding: 5px  8px;
+      border-radius: 15px; }
+  header #nav {
+    position: fixed;
+    width: 85%;
+    overflow: hidden;
+    height: 65px;
+    border-radius: 25px;
+    z-index: 2;
+    background-color: #0b0c10;
+    cursor: pointer; }
+  header #opt {
+    width: 80%;
+    float: right; }
+    header #opt .option {
+      font-size: 20px;
+      margin: 0 2%;
+      line-height: 65px;
+      float: right; }
+    header #opt .option:hover {
+      color: #c5c6c7af; }
+  header #logo {
+    width: 30%;
+    float: left;
+    text-align: left;
+    overflow: hidden; }
+    header #logo img {
+      position: fixed;
+      width: 120px;
+      top: -6px;
+      margin: 0 -125px; }
+
+@media screen and (max-width: 655px) {
+  #bars {
+    display: flex; }
+
+  header {
+    margin-top: 60px; }
+
+  header .bar i {
+    display: none; }
+
+  #nav {
+    display: none; } }
+@media screen and (max-width: 465px) {
+  #bars h1 {
+    display: none; }
+
+  #bars h3 {
+    width: 80%; } }
+@media screen and (max-width: 350px) {
+  #menu i {
+    display: none; }
+
+  #menu select {
+    margin: 0px 14.5% !important; } }
+.profil {
+  overflow: hidden;
+  font-size: 20px;
+  padding: 80px 0;
+  background-color: #c5c6c7af;
+  clear: both; }
+  .profil div h1 {
+    margin: 0 35px 5%;
+    color: #0b0c10; }
+  .profil div div {
+    overflow: hidden;
+    float: left;
+    width: 70%;
+    color: #1F2833; }
+    .profil div div ul li {
+      margin: 0 7.5%; }
+    .profil div div h3 {
+      color: #0b0c10;
+      margin: 10px 2%; }
+  .profil div img {
+    float: right;
+    margin-top: 20px;
+    width: 14%;
+    margin-left: 5%; }
+
+@media screen and (max-width: 465px) {
+  .profil div img, .profil div div {
+    float: none; }
+
+  .profil div img {
+    width: 40%;
+    margin: 20px 30%; }
+
+  .profil div div {
+    width: 90%;
+    margin: auto; } }
+@media screen and (max-width: 264px) {
+  .profil div h1 {
+    text-align: center;
+    margin: auto; } }
+.skills {
+  padding: 80px 0;
+  overflow: hidden;
+  font-size: 20px;
+  background-color: #1F2833; }
+  .skills div h1 {
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #45A29E; }
+  .skills div .prog {
+    overflow: hidden;
+    color: #c5c6c7af;
+    margin-left: 2%;
+    text-align: left !important;
+    direction: ltr !important; }
+    .skills div .prog h3 {
+      float: left;
+      width: 15%; }
+    .skills div .prog div {
+      position: relative;
+      background-color: #0b0c1069;
+      width: 60%;
+      height: 12px;
+      border-radius: 5px;
+      float: left;
+      margin-top: 18px;
+      z-index: 1;
+      margin-left: 8%; }
+      .skills div .prog div span {
+        border-radius: 5px;
+        background-color: #66FCF1;
+        position: absolute;
+        height: 100%; }
+    .skills div .prog ul li {
+      margin: 0 7.5%; }
+    .skills div .prog h3 {
+      color: #c5c6c7af;
+      margin: 10px 2%;
+      display: inline; }
+
+@media screen and (max-width: 655px) {
+  .skills div .prog div {
+    animation: marge 3s; }
+
+  @keyframes marge {
+    from {
+      margin-left: 8%; }
+    to {
+      margin-left: 15%; } }
+  .skills div .prog div {
+    margin-left: 15%; } }
+@media screen and (max-width: 465px) {
+  .skills div .prog div {
+    animation: marge 1s; }
+
+  @keyframes marge {
+    from {
+      margin-left: 15%; }
+    to {
+      margin-left: 17.5%; } }
+  .skills div .prog div {
+    margin-left: 20%; } }
+@media screen and (max-width: 330px) {
+  .skills div .prog div {
+    width: 50%;
+    margin-left: 30%; } }
+@media screen and (max-width: 264px) {
+  .skills div .prog h3, .skills div .prog div {
+    float: none;
+    width: 100%;
+    margin: 10px auto; }
+
+  .skills div .prog h3 {
+    text-align: center;
+    display: block; } }
+.gallery {
+  padding: 80px 0;
+  overflow: hidden;
+  font-size: 20px;
+  background-color: #c5c6c7af; }
+  .gallery div h1 {
+    margin: 0 35px 5%;
+    color: #0b0c10; }
+  .gallery div div {
+    width: 50%;
+    margin: auto; }
+    .gallery div div img {
+      width: 90%; }
+
+@media screen and (max-width: 655px) {
+  .gallery div div {
+    width: 100%;
+    margin: 10px 5%; } }
+@media screen and (max-width: 465px) {
+  .gallery div div {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 5%; } }
+.features {
+  overflow: hidden;
+  font-size: 20px;
+  padding: 80px 0;
+  background-color: #45A29E; }
+  .features div h1 {
+    margin: 0 35px 5%;
+    color: #c5c6c7; }
+  .features div div {
+    width: 27%;
+    margin: 50px 2.51% 0px;
+    display: inline-block; }
+    .features div div img {
+      width: 40%;
+      margin: 0 30%; }
+    .features div div h3, .features div div p {
+      text-align: center; }
+
+@media screen and (max-width: 465px) {
+  .features div div {
+    width: 44%; } }
+@media screen and (max-width: 264px) {
+  .features div h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 25px; }
+
+  .features div div {
+    width: 80%;
+    margin: 15px auto;
+    text-align: center; }
+
+  .features {
+    text-align: center; } }
+footer {
+  overflow: hidden;
+  font-size: 20px;
+  padding-top: 80px;
+  background-color: #c5c6c7af; }
+  footer .container h1 {
+    margin: 0 35px 5%;
+    color: #0b0c10; }
+  footer .container .div1 {
+    width: 50%;
+    float: right; }
+    footer .container .div1 input {
+      width: 80%;
+      height: 40px;
+      margin: 8px auto;
+      background-color: #1F2833;
+      color: #66FCF1;
+      padding: 0 15px;
+      border-radius: 20px;
+      outline: none; }
+    footer .container .div1 input:focus, footer .container .div1 input:hover {
+      border: #45A29E 2px double;
+      background-color: #1f2833f3; }
+    footer .container .div1 ::placeholder {
+      color: #66FCF1; }
+  footer .container .div2 {
+    width: 50%;
+    float: left; }
+    footer .container .div2 ::placeholder {
+      color: #66FCF1; }
+    footer .container .div2 #text {
+      margin: 8px auto;
+      max-width: 84%;
+      width: 100%;
+      height: 130px;
+      background-color: #1F2833;
+      color: #66FCF1;
+      padding: 15px;
+      border-radius: 20px;
+      outline: none; }
+    footer .container .div2 #text:hover, footer .container .div2 #text:focus {
+      border: #45A29E 2px double;
+      background-color: #1f2833f3;
+      margin: 7px auto; }
+    footer .container .div2 input {
+      width: 84%;
+      height: 40px;
+      margin: 8px auto;
+      background-color: #1F2833;
+      color: #66FCF1;
+      padding: 5px;
+      border-radius: 20px;
+      outline: none; }
+    footer .container .div2 input:hover {
+      border: #45A29E 2px double;
+      background-color: #1f2833f3; }
+  footer .div3 {
+    background-color: #1F2833;
+    color: #c5c6c7af;
+    text-align: center;
+    margin-top: 80px;
+    height: 50px;
+    line-height: 50px; }
+
+@media screen and (max-width: 465px) {
+  footer .container .div1, footer .container .div2 {
+    float: none;
+    width: 100%;
+    overflow: hidden; }
+
+  footer .container .div1 input {
+    width: 100%;
+    margin: 10px 0; }
+
+  footer .container .div2 #text {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0; }
+
+  footer .container .div2 input {
+    width: 100%; } }
+@media screen and (max-width: 330px) {
+  footer .container h1, .features div h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 35px; } }
+body {
+  direction: rtl;
+  text-align: right; }
+
+footer .container .div1 ::placeholder,
+footer .container .div2 ::placeholder {
+  text-align: right; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  height: 2500px; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+.display {
+  display: none !important; }
+
+.display1 {
+  display: block !important; }
+
+@media screen and (max-width: 655px) {
+  .container {
+    animation: wid 3s; }
+
+  @keyframes wid {
+    from {
+      width: 80%; }
+    to {
+      width: 90%; } }
+  .container {
+    width: 90%; } }
+@media screen and (max-width: 465px) {
+  .container {
+    animation: wid 1s; }
+
+  @keyframes wid {
+    from {
+      width: 90%; }
+    to {
+      width: 95%; } }
+  .container {
+    width: 95%;
+    overflow: hidden; } }
+
+/*# sourceMappingURL=style.css.map */

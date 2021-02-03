@@ -1,0 +1,48 @@
+.features{
+    overflow: hidden;
+    font-size: $para-size;
+    padding: $margin 0;
+    background-color: $color5;
+    div{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            color: $color6;
+        }
+        div{
+            width: 27%;
+            margin: 50px 2.51% 0px;
+            display: inline-block;
+            img{
+                width: 40%;
+                margin: 0 30%;
+            }
+            h3,p {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media  screen and (max-width : 465px){
+    .features div div {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width : 264px){
+    .features div h1 {
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    .features div div{
+        width: 80%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .features{
+        text-align: center;
+    }
+    
+}

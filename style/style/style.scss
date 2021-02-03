@@ -1,0 +1,70 @@
+@import "Variables.scss";  
+// This file  for arabic rtl
+@import "ar-addition.scss";
+// This file  for arabic rtl
+@import "header.scss";
+// This file  for arabic rtl
+@import "ar-addition.scss";
+// This file  for arabic rtl
+@import "about.scss";
+@import "skills.scss";
+@import "projects.scss";
+@import "characteristics.scss";
+@import "contact.scss";
+
+    
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.display{
+     display: none !important;
+}
+.display1{
+    display: block !important;
+}
+
+@media  screen and (max-width : 655px){
+    .container {
+        animation: wid 3s;
+    }
+    @keyframes wid {
+        from{
+            width: 80%;
+        }to{
+            width: 90%;
+        }
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+@media  screen and (max-width : 465px){
+    .container {
+        animation: wid 1s;
+    }
+    @keyframes wid {
+        from{
+            width: 90%;
+        }to{
+            width: 95%;
+        }
+    }
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+}
+
+
+
+

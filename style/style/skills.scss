@@ -1,0 +1,103 @@
+.skills{
+    padding:  $margin 0;
+    overflow: hidden;
+    font-size: $para-size;
+    background-color: $color2 ;
+    div{
+        h1{
+            width: 100%;
+            margin-bottom: $marginleftHe ;
+            text-align: center;
+            color: $color5;
+        }
+        .prog{
+            overflow: hidden;
+            color: $color3;
+            margin-left: 2%;
+            text-align: left !important;
+            direction: ltr !important;
+            h3{
+                float: left;
+                width: 15%;
+            }
+            div{ 
+                position: relative;
+                background-color: $colorspan;
+                width: 60%;
+                height: 12px;
+                border-radius: 5px;
+                float: left;
+                margin-top: 18px;
+                z-index: 1;
+                margin-left: 8%;
+                span{
+                    border-radius: 5px;
+                    background-color: $color4;
+                    position: absolute;
+                    height: 100%;
+                }
+            }
+            ul{
+                li{
+                    margin:  0 7.5%;
+                }
+            }
+            h3{
+                color: $color3;
+                margin: 10px 2%;
+                display: inline;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width : 655px){
+    .skills div .prog div {
+        animation: marge 3s;
+    }
+    @keyframes marge {
+        from{
+            margin-left: 8%;
+        }to{
+            margin-left: 15%;
+        }
+    }   
+    .skills div .prog div {
+        margin-left: 15%;
+    }
+}
+
+@media  screen and (max-width : 465px){
+    .skills div .prog div {
+        animation: marge 1s;
+    }
+    @keyframes marge {
+        from{
+            margin-left: 15%;
+        }to{
+            margin-left: 17.5%;
+        }
+    }
+    .skills div .prog div {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width : 330px){
+    .skills div .prog div  {
+        width: 50%;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width : 264px){
+    .skills div .prog h3,.skills div .prog div{
+        float: none;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .skills div .prog h3{
+        text-align: center;
+        display: block;
+    }
+}

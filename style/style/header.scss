@@ -1,0 +1,183 @@
+#menu{
+    overflow: hidden;
+    top: 50px;
+    position: fixed;
+    height: 95%;
+    background-color: $color2;
+    z-index: 3;
+    display: none;
+    min-width: 35%;
+    #s1,.option1 , .option2{
+        margin: -4% -7%;
+        padding: 8% ;
+        text-align: center !important;
+    }
+    #s1:hover,.option1:hover, .option2:hover{
+        background-color: $color5;
+        color: white;
+    }
+    i{
+            margin-top: 21px;
+            font-size: 35px;
+            position: fixed;
+            color: $color6;
+        }
+    select{
+        font-size: 8px;
+        margin: 14% 28% !important;
+        padding: 10px 10px !important ;
+        font-weight: bold;
+        border-radius: 20px;
+        background-color: $color6;
+        color: $color1;
+        width: 70%;
+
+        }
+}
+
+header{
+    background-image: url($pathImg + $backImg );
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color : $colorHeader;
+    overflow: hidden;
+    #im{
+        height: 50px;
+        position: fixed;
+        width: 50px;
+        z-index: 1000;
+        left: 80px;
+    }
+    h3, #im{
+        display: none;
+    }
+    .bar{
+        position: absolute;
+        top: 10px;
+        i{
+            font-size: 50px;
+            margin-top: 11px;
+            margin: 11px 20px 0px;
+        }
+        i:hover{
+            color: $color4;
+            cursor: pointer;
+        }
+        form select{
+            margin:25px 10px;
+            line-height: 65px;
+            float: $float-left;
+            background-color: $color2;
+            color: $color6;
+            font-size: 15px;
+            padding: 5px  8px;
+            border-radius: 15px;
+        }
+    }
+    #nav{
+        position: fixed;
+        width: 85%;
+        overflow: hidden;
+        height: 65px;
+        border-radius: 25px;
+        z-index: 2;
+        background-color: $color1;
+        cursor: pointer;
+        top: 10px;
+    }
+    #opt1{
+        width: $width-G + 10%;
+        float: $float-left;
+        .option{
+            font-size: 20px;
+            margin:0 2%;
+            line-height: 65px;
+            float: $float-left;
+        }
+        .option:hover{
+            color: $color3;
+        }
+    }
+    #logo{
+        width: $width-P;
+        float: $float-right;
+        text-align: $float-right;
+        overflow: hidden;
+        img{
+            position: fixed;
+            width: 120px;
+         //   right: 80px;
+            top: -6px;
+            margin:0 -125px;
+        }
+    }
+}
+
+
+@media  screen and (max-width : 670px){
+    header{
+        margin-top: 50px;
+        .bar{
+            display: none;
+        }
+        .container{
+            width: 100%;
+        }
+        
+        #nav{
+            height: 50px;
+            top: 0px;
+            width: 100%;
+            border-radius: 0%;
+            #im{
+                display: block;
+                width: 50px;
+            }
+            .option{
+                line-height: 50px;
+            }
+            img {
+                width: 80px;
+                margin: 0px -80px;
+                }
+            #opt1{
+                display: none;
+            }
+            h3{
+                display: block;
+                position: absolute;
+                z-index: 3;
+                margin: 15px 60px;
+                }
+
+            #menu #opt{
+                display: block;
+            }
+        } 
+    }   
+}
+
+@media  screen and (max-width : 465px){
+    #bars h1 {
+        display: none;
+    }
+    #bars  h3{
+        width: 80%;
+    }
+    #menu{
+        min-width: 37.5%;
+    }
+}
+
+@media screen and (max-width:350px){
+    #menu i{
+        display: none;
+    }
+}
+@media screen and (max-width:255px){
+    header #nav h3 {
+        margin: 2px 60px;
+    }
+}
+

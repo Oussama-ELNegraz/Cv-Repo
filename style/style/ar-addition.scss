@@ -1,0 +1,16 @@
+
+$float-right :left ;
+$float-left : right ;
+
+body{
+    direction: rtl;
+    text-align: right;
+}
+
+footer .container .div1 ::placeholder,
+footer .container .div2 ::placeholder{
+   text-align: right;
+ }
+header #im{
+    right: 80px;
+}

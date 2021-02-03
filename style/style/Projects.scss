@@ -1,0 +1,34 @@
+.gallery{
+    padding:  $margin 0;
+    overflow: hidden;
+    font-size: $para-size;
+    background-color: $color3 ;
+    div{
+        h1{
+            margin: 0 $marginBetweenH $marginleftHe ;
+            color: $color1;
+        }
+        div{
+            width: 50%;
+            margin: auto;
+            img{
+            width: 90%;
+            }
+        }
+    }
+}
+
+
+@media  screen and (max-width : 655px){
+    .gallery div div{
+        width: 100%;
+        margin: 10px 5%;
+    }
+}
+@media  screen and (max-width : 465px){
+    .gallery div div{
+        width: 100%;
+        overflow: hidden;
+        margin: 10px 5%;
+    }
+}
