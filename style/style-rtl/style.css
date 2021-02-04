@@ -7,7 +7,7 @@ footer .container .div2 ::placeholder {
   text-align: right; }
 
 header #im {
-  right: 80px; }
+  right: 10px; }
 
 #menu {
   overflow: hidden;
@@ -48,11 +48,11 @@ header {
   color: white;
   overflow: hidden; }
   header #im {
-    height: 50px;
     position: fixed;
-    width: 50px;
     z-index: 1000;
-    left: 80px; }
+    left: 10px;
+    top: 10px;
+    font-size: 30px; }
   header h3, header #im {
     display: none; }
   header .bar {
@@ -118,8 +118,7 @@ header {
       width: 100%;
       border-radius: 0%; }
       header #nav #im {
-        display: block;
-        width: 50px; }
+        display: block; }
       header #nav .option {
         line-height: 50px; }
       header #nav img {
@@ -158,7 +157,7 @@ footer .container .div2 ::placeholder {
   text-align: right; }
 
 header #im {
-  right: 80px; }
+  right: 10px; }
 
 .profil {
   overflow: hidden;

@@ -43,11 +43,11 @@ header{
     color : $colorHeader;
     overflow: hidden;
     #im{
-        height: 50px;
         position: fixed;
-        width: 50px;
         z-index: 1000;
-        left: 80px;
+        left: 10px;
+        top: 10px;
+        font-size: 30px;
     }
     h3, #im{
         display: none;
@@ -132,7 +132,6 @@ header{
             border-radius: 0%;
             #im{
                 display: block;
-                width: 50px;
             }
             .option{
                 line-height: 50px;
