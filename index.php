@@ -223,7 +223,7 @@ $language = null;
                 <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
                     <img src="img/site1.jpeg" alt="">
                 </a>
-                <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
+                <a href="https://oussama-gif.github.io/Site1/" target="_blank">
                     <img src="img/site2.png" alt="">
                 </a>
                 <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
