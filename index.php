@@ -176,10 +176,6 @@ $language = null;
                         <?php  echo lang('comp') ?> 
             </h1>
             <div class="prog">
-                <h3>C</h3>
-                <div><span data-progress="98%" class="pr"></span></div>
-            </div>
-            <div class="prog">
                 <h3>Html</h3>
                 <div><span data-progress="80%" class="pr"></span></div>
             </div>
@@ -188,28 +184,28 @@ $language = null;
                 <div><span data-progress="80%" class="pr"></span></div>
             </div>
             <div class="prog">
-                <h3>Javascript</h3>
-                <div><span data-progress="95%" class="pr"></span></div>
-            </div>
-            <div class="prog">
                 <h3>Sass</h3>
-                <div><span data-progress="85%" class="pr"></span></div>
-            </div>
-            <div class="prog">
-                <h3>Bootstrap</h3>
-                <div><span data-progress="65%" class="pr"></span></div>
-            </div>
-            <div class="prog">
-                <h3>Jquery</h3>
                 <div><span data-progress="70%" class="pr"></span></div>
             </div>
             <div class="prog">
+                <h3>Bootstrap</h3>
+                <div><span data-progress="60%" class="pr"></span></div>
+            </div>
+            <div class="prog">
+                <h3>Javascript</h3>
+                <div><span data-progress="80%" class="pr"></span></div>
+            </div>
+            <div class="prog">
+                <h3>Jquery</h3>
+                <div><span data-progress="60%" class="pr"></span></div>
+            </div>
+            <div class="prog">
                 <h3>Php</h3>
-                <div><span data-progress="90%" class="pr"></span></div>
+                <div><span data-progress="75%" class="pr"></span></div>
             </div>
             <div class="prog">
                 <h3>MySQL</h3>
-                <div><span data-progress="90%" class="pr"></span></div>
+                <div><span data-progress="75%" class="pr"></span></div>
             </div>
         </div>
     </div>
@@ -220,14 +216,14 @@ $language = null;
                         <?php  echo lang('pro') ?> 
             </h1>
             <div class="site">
-                <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
+            <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
                     <img src="img/site1.jpeg" alt="">
                 </a>
-                <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
-                    <img src="img/site2.png" alt="">
-                </a>
-                <a href="https://oussama-gif.github.io/coronavirus/" target="_blank">
+                <a href="https://oussama-gif.github.io/Site1/" target="_blank">
                     <img src="img/site3.png" alt="">
+                </a>
+                <a href="https://oussama-gif.github.io/Site3/" target="_blank">
+                    <img src="img/site2.png" alt="">
                 </a>
             </div>
         </div>
