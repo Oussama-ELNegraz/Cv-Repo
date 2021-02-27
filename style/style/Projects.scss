@@ -9,26 +9,56 @@
             color: $color1;
         }
         div{
-            width: 50%;
+            overflow: hidden;
             margin: auto;
+            text-align: center;
             img{
-            width: 90%;
+            height: 160px;
+            margin: 10px;
             }
         }
     }
 }
 
 
-@media  screen and (max-width : 655px){
-    .gallery div div{
-        width: 100%;
-        margin: 10px 5%;
-    }
-}
-@media  screen and (max-width : 465px){
+@media  screen and (max-width : 905px){
     .gallery div div{
         width: 100%;
         overflow: hidden;
-        margin: 10px 5%;
+        margin: 10px 0%;
     }
+    .gallery div div img{
+        height: 130px;
+        margin: 7px;
+        }
+}
+@media  screen and (max-width : 713px){
+    .gallery div div img{
+        height: 100px;
+        margin: 7px;
+        }
+}
+@media  screen and (max-width : 502px){
+    .gallery div div img{
+        height: 80px;
+        margin: 7px;
+        }
+}
+@media  screen and (max-width : 391px){
+    .gallery div div img{
+        height: 70px;
+        margin: 5px;
+        }
+}
+@media  screen and (max-width : 348px){
+    .gallery div div img{
+        height: 60px;
+        margin: 3px;
+        }
+}
+@media  screen and (max-width : 289px){
+    .gallery div div img{
+        height: 45px;
+        margin: 1px;
+        }
 }
